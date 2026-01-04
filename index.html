@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>ToDo App</title>
+  </head>
+  <body>
+    <main class="flex w-full h-screen justify-around items-center">
+      <div class="border rounded-md">
+        <form class="flex flex-col p-8 gap-4">
+          <label for="todo">New Todo</label>
+          <input type="text" name="todo" id="todo" class="border rounded-sm" />
+          <label for="category">Category</label>
+          <select name="category" id="category" class="border rounded-sm">
+            <option value="">Select a Category</option>
+            <option value="housechore">House Chore</option>
+            <option value="buy">Buy</option>
+          </select>
+          <button id="addButton" class="border rounded-full mt-4">Add</button>
+        </form>
+      </div>
+
+      <div class="border rounded-md min-w-60 min-h-67">
+        <ul id="list" class="flex flex-col items-center p-2"></ul>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
